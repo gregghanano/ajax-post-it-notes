@@ -56,16 +56,13 @@
 		width: 970px;
 		height: 2000px;
 	}
-	.notes-area {
-		border: 1px solid black;
-	}
 	.full-note{
 		display:inline-block;
 	}
 	.note-box{
 		height:300px;
 		width:200px;
-		border:1px solid black;
+		/*border:1px solid black;*/
 		margin: 10px;
 		padding: 10px;
 		display:inline-block;
@@ -74,7 +71,7 @@
 	.description-box{
 		height:200px;
 		width:175px;
-		border:1px solid black;
+		/*border:1px solid black;*/
 		padding: 10px;
 		display:inline-block;
 	}
