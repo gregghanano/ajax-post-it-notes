@@ -11,7 +11,7 @@
 			// 	function(data){
 			// 		$('.notes-area').html(data);
 			// 	});
-			$.post(
+			$.get(
 			'/notes/load',function(output){
 			$('.notes-area').html(output)
 			});
@@ -52,6 +52,13 @@
 			});
 	</script>
 	<style>
+	body {
+		background-color: #769BC0;
+		padding-left: 20px;
+	}
+	h1{
+		margin-bottom: 0px;
+	}
 	#container{
 		width: 970px;
 		height: 2000px;
@@ -74,16 +81,20 @@
 		/*border:1px solid black;*/
 		padding: 10px;
 		display:inline-block;
+		background-color: #FFEF00;
 	}
 	.textbox{
-		height:150px;
-		width:150px;
+		height:200px;
+		width:175px;
+		background-color: #FFEF00;
+		border: 0px;
 	}
 	#titleForm{
 		margin-top: 20px;
 	}
 	h2{
 		display:inline-block;
+		margin-top: 5px;
 	}
 	p {
 		display:inline-block;
@@ -93,13 +104,14 @@
 </head>
 <body>
 	<div id='container'>
-		<h1>Notes</h1>
-		<div class='notes-area'>
-			</div>
+		<h1>AJAX Notes</h1>
 		<form id='titleForm' action='/notes/title_add' method='post'>
 			<input type='text' name='title' placeholder='Title...'>
 			<input type='submit' value='Add Note'>
 		</form>
+		<div class='notes-area'>
+			</div>
+	</div>
 	
 </body>
 </html>
